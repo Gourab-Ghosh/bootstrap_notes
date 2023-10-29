@@ -1,0 +1,232 @@
+# = {xxl, xl, lg, md, sm, print}
+
+ToDo -> blockquote(video 23), dropdown-menu(video 25), table(video 27 + video 29)
+
+ROW, COLUMN AND CONTAINER
+	container-#
+
+	container-fluid
+
+	row
+
+	col
+		col -> arranges classes to next line to make it responsive
+
+		col-# -> 100% width after breakpoint
+
+		col-* -> sets width
+
+		col-#-* -> functions of above 2
+
+		w-100 -> does the above and tells from where to break, can be used multiple times. Used in new div.
+
+		row-cols-* -> to be applied in parent class, tells how many cols per row. if sum of column lengths > 12 then the last column will go to next row
+
+	offest
+		offset-* -> gives gap in left by * columns
+
+		rest all same as col
+
+ORDERING
+	order-#-first -> sets ordering of colunms
+
+	order-#-last -> sets ordering of colunms
+
+	order-#-* -> sets ordering of colunms
+
+
+MARGIN AND PADDING
+	margin
+		m-auto -> margin is set as auto
+
+		ml-auto -> margin left is set as auto
+
+		mr-auto -> margin right is set as auto
+
+		mt-auto -> margin top is set as auto
+
+		mb-auto -> margin bottom is set as auto
+
+		mx-auto -> margin along x-axis is set as auto
+
+		my-auto -> margin along y-axis is set as auto
+
+		m{_, l, r, t, b, x, y}-#-* can be used, 0 -> 0rem, 1 -> 0.25rem, 2 -> 0.5rem, 3 -> 1rem, 4 -> 1.5rem, 5 -> 3rem
+
+		m{_, l, r, t, b}-#-* negative also works.
+
+	padding
+		p-* -> padding all same as margin
+
+		no-gutters -> To be applied on row, all the margins and paddings of the rows and columns become 0.
+
+	gutter padding
+		g-#-* -> padding between columns, * in [0..6], applied on parent class.
+
+		gx-#-* -> padding between columns, * in [0..6], applied on parent class.
+
+		gy-#-* -> padding between columns, * in [0..6], applied on parent class.
+
+FLEX PROPERTIES
+	justify-content-#-{start, end, between, center, around} -> applied in parent class
+
+	align-item-#-{start, end, center, stretch, baseline} -> applied in parent class
+
+	align-content-#-{start, end, center, between, around} -> applied in parent class
+
+	align-self-#-{start, end, center, stretch, baseline, auto} -> applied in child class
+
+	flex-#-{row, row-reverse, column, column-reverse, wrap, no-wrap, wrap-reverse, fill} -> applied in parent class
+
+DISPLAY
+	d-#-{none, inline, inline-block, block, table, table-cell, table-row, flex, inline-flex}
+
+	sr-only -> shows only in big screen
+
+FLOAT
+	float-#-{left, right, none}
+
+	clearfix-#
+
+
+WIDTH AND HEIGHT
+	w-{25, 50, 75, 100, auto} -> width in percentage
+
+	mw-100 -> max width is 100%
+
+	vw-100 -> width is 100vw
+
+	min-vw-100 -> width is min(100vw, current value)
+
+	h-{25, 50, 75, 100, auto} -> heihgt in percentage
+
+	mh-100 -> max heihgt is 100%
+
+	vh-100 -> heihgt is 100vh
+
+	min-vh-100 -> heihgt is min(100vh, current value)
+
+BORDER
+	border -> adds border
+
+	border-{top, right, bottom, left}-*
+
+	border-{primary, secondary, success, danger, warning, info, light, dark, white, transparent}
+
+	rounded
+
+	rounded-*
+
+	rouned-{top, right, bottom, left, circle}
+
+POSITION
+	position-{relative, absolute, staic, fixed, sticky}
+
+	fixed-{top, bottom}
+
+	sticky-top
+
+OVERFLOW
+	overflow-{auto, hidden}
+
+COLOR AND BACKGROUND COLOR
+	bg-{primary, secondary, success, danger, warning, info, light, dark, white, transparent}
+
+	text-{primary, secondary, success, danger, warning, info, light, dark, white, body, muted, black-50, white-50}
+
+TEXT AND FONT
+	text
+		text-#-{left, right, center}
+
+		text-{justify, lowercase, uppercase, capitalize, nowrap, truncate, break}
+
+		text-decoration-none
+
+	font
+		font-italic
+
+		font-weight-{bold, bolder, light, lighter, normal}
+
+		display-* -> font size, values are 1,2,3,4
+
+		lead -> font size little bit bigger than paragrph
+
+	line height
+		lh-{1, sm, base, lg}
+
+LIST
+	list-{unstyled, inline} -> applied on ul
+
+	list-inline-item -> applied on li
+
+USER SELECT
+	user-select-{all, auto, none} -> derermines how user wants to select text
+
+BUTTONS
+	btn
+		btn -> gives shape applied on button as well as anchor tag
+
+		btn-{primary, secondary, success, danger, warning, info, light, dark, link} -> fills with color applied on button as well as anchor tag, btn class is necessary
+
+		btn-outline-{primary, secondary, success, danger, warning, info, light, dark} -> gives outline color applied on button as well as anchor tag, btn class is necessary
+
+		btn-lg -> large button, btn class is necessary
+
+		btn-sm -> small button, btn class is necessary
+
+		btn-block -> makes display block, btn class is necessary
+
+		btn-group -> groups all buttons horizontally, applied in parent class, usually used for icons
+
+		btn-group-vertical -> groups all buttons vertically, applied in parent class, usually used for icons
+
+		btn-group-lg -> large size buttons, applied in parent class, btn-group class is necessary
+
+		btn-group-sm -> small size buttons, applied in parent class, btn-group class is necessary
+
+		btn-toolbar -> group of button groups, applied on prent class of btn-group class
+
+	activations
+		active -> already hovered
+
+		disabled -> used in anchor tags only, for buttons directly in html
+
+LIST GROUP
+	list-group -> applied with ul
+
+	list-group-flush -> removes outer border
+
+	list-group-horizontal -> aligns items horizontally
+
+	list-group-horizontal-#
+
+	list-group-item -> applied with li and mainly used with anchor tag
+
+	list-group-item-{light, primary, secondary, success, danger, warning, info, dark} -> sets color, applied with li
+
+	active -> sets color to show active, mainly used with anchor tag
+
+	disabled -> sets color to show disabled, mainly used with anchor tag
+
+	list-group-item-action -> used with list-group-item
+
+FORM
+	form-group -> applied on divs containing label, form sub-objects and form text
+
+	form-control -> applied on form sub-objects
+
+	form-control-{sm, lg} -> size of text box, form-control is necessary
+
+	form-control-plaintext -> applied on form sub-objects which are readonly(by applying readonly attribute)
+
+	form-text -> text in form, usually used within <small></small>
+
+	form-control-file -> applied with file type input
+
+	form-control-range -> applied with range type input
+
+	form-check-input -> applied with checkbox and radiobutton type input
+
+	form-check-label -> applied with checkbox and radiobutton label type input
+
+	form-inline -> makes form in one line
